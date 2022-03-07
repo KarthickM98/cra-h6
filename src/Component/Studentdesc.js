@@ -35,7 +35,7 @@ export const Studentdesc = () => {
   };
   const submit = (e) => {
     e.preventDefault();
-    if (!id == "") {
+    if (!id === "") {
       const newdata = { ...data, id: id };
       dispatch(updateStudent(newdata));
     } else {

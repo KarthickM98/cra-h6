@@ -42,7 +42,7 @@ const studentReducer = (state = initialState, action) => {
       return [...state, action.payload];
     case "UPDATE_STUDENT":
       const newStu = state.map((val) =>
-        val.id == action.payload.id ? action.payload : val
+        val.id === action.payload.id ? action.payload : val
       );
       return newStu;
     case "DELETE_STUDENT":
